@@ -24,8 +24,8 @@ Tipo    :   {self.tipo}"""
 
 
 def clear(): return 
-    # if os.name == "nt":
-    #     os.system("cls")
+    if os.name == "nt":
+       os.system("cls")
 
 pokedes = [
     Pokemon("Pikachu","eléctrico",130),
@@ -77,3 +77,4 @@ print(f"ENTRENADOR 2 - eligió a => {pokedes[user2].nombre}\n{'*'*46}")
 clear()
 print(f"{'-'*80}\n{'Comienza la batalla'.upper():^80}")
 batalla(pokedes[user1],"ENTRENADOR 1",pokedes[user2],"ENTRENADOR 2")
+
